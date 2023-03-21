@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">CodeStorm Survey Form</h1>
+    <p id="description">A feedback survey for a web development hackathon<p> 
+    <form id="survey-form">
+      <label id="name-label">Name <input id="name" type="text"  placeholder="Enter your name" required></label>
+      <label id="email-label">Email <input id="email" type="email"  placeholder="Enter your Email"></label>
+      <label id="number-label">Age <input id="age" type="number"  placeholder="Age" min="8" max="120"></label>
+      
+      <p>Which option best describes your current role?</p>
+      <select id="dropdown">
+         <option selected disabled> Select current role</option>
+         <option> Student</option>
+         <option> Full Time Job</option>
+         <option> Others</option>
+      </select>
+
+      <p>Would you recommend CodeStorm to a friend? </p> 
+        <label ><input type="radio" name="recommendation" value="definately"> Definately</label>
+        <label ><input type="radio" name="recommendation" value="maybe"> Maybe</label>
+        <label ><input type="radio" name="recommendation" value="NotSure"> Not Sure</label>
+
+      <p>What would you like to improved?</p>
+         <label class="inline"><input type="checkbox">Front-end Projects</label>
+         <label class="inline"><input type="checkbox">Back-end Projects</label>
+         <label class="inline"><input type="checkbox">Data Visualization</label>
+
+       <label>Any comments or suggestions?<input type="textarea" placeholder="Enter your comments here..."></label>
+       
+       <button id="submit" type="submit">Submit</button>
+    </form>  
+  </body>
+</html>
